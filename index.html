@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Animated hover menu</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					backgroundImage: {
+						hero: 'url("https://cdn.wallpapersafari.com/97/50/eRwDMy.jpg")',
+					},
+					fontFamily: {
+						main: 'Poppins',
+					},
+				},
+			}
+		</script>
+	</head>
+	<body class="flex justify-center bg-slate-700 text-white bg-hero bg-cover bg-blend-overlay">
+		<div id="menu" class="flex font-main mt-20 text-2xl space-x-8 relative">
+			<a class="py-2 border-b border-b-2 border-b-red-500" href="#">Home</a>
+			<a class="py-2 border-b border-b-2 border-b-red-500" href="#">Pricing</a>
+			<a class="py-2 border-b border-b-2 border-b-red-500" href="#">Blog</a>
+			<a class="py-2 border-b border-b-2 border-b-red-500" href="#">Read Our History</a>
+			<a class="py-2 border-b border-b-2 border-b-red-500" href="#">Contact us</a>
+		</div>
+
+		<script src="./main.js"></script>
+	</body>
+</html>
