@@ -1,5 +1,8 @@
 const links = document.querySelectorAll('a')
 const highLight = document.createElement('span')
+const menuPos = document.getElementById('menu').getBoundingClientRect()
+
+highLight.style.transform = `translate(-${menuPos.left}px, ${menuPos.top}px)`
 
 highLight.classList.add(
 	'bg-red-500',
@@ -17,6 +20,7 @@ document.body.appendChild(highLight)
 links.forEach((link) => {
 	link.addEventListener('mouseover', (e) => {
 		const coords = e.target.getBoundingClientRect()
+
 		let top = coords.top + window.scrollY
 		let left = coords.left + window.scrollX
 
